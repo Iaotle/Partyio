@@ -1,0 +1,202 @@
+body{
+	background-color:#AABADA;
+}
+textarea:focus, input:focus{
+		outline: none;
+}label{
+	font-weight: 200;
+	font-family: Comic Sans MS;
+	font-size:300%;
+}
+
+.formInput{
+	border-style:outset;
+	border-color: #1E90FF;
+	border-width:5px;
+	background-color:#4169E1;
+	text-align:center;
+	font-size:400%;
+	font-weight: 200;
+	font-family: Comic Sans MS;
+	color:white;
+}
+
+input[type=submit]{
+	cursor:pointer;
+}
+.box {
+	font-weight: 900;
+	font-family: Comic Sans MS;
+	border-style:solid;
+	border-color:#4169E1;
+	text-align:center;
+	border-width:5px;
+}
+
+#wrapper{
+	position:absolute;
+	font-size:690%;
+	left:38%;
+	top:25%;
+}
+
+#create{
+	border-width:10px;
+	margin-bottom:10%;
+	background-color:#4169E1;
+	color:white;
+	cursor:pointer;
+}
+#join{
+	border-width:10px;
+	background-color:#DC143C;
+	color:white;
+	cursor:pointer;
+}
+
+#createFormWrapper{
+	border-style:outset;
+	background-color:#649FDB;
+	color:white;
+	padding:1%;
+	display:none;
+	position:absolute;
+	left:22%;
+	top:10%;
+}
+#joinFormWrapper{
+	border-style:outset;
+	background-color:#649FDB;
+	color:white;
+	padding:1%;
+	display:none;
+	position:absolute;
+	left:22%;
+	top:10%;
+}
+#backButton{
+	border-style:outset;
+	cursor:pointer;
+	background-color:#DC143C;
+	border-color:#B22222;
+	color:white;
+	display:none;
+	font-size:500%;
+	position:absolute;
+	left:14%;
+	top:10%;
+}
+
+#submitJoin{
+	border-color:#00FF00;
+	border-width:5px;
+	background-color: #32CD32;
+	color:white;
+}
+#submitCreate{
+	border-color:#00FF00;
+	border-width:5px;
+	background-color: #32CD32;
+	color:white;
+}
+
+#container {
+	display:none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	font-weight: 900;
+	font-family: Comic Sans MS;
+}
+
+#left-container {
+	width: 70%;
+	float: left;
+}
+
+#right-container {
+	width: 30%;
+	float: left;
+}
+
+#header {
+	height: 100px;
+	text-align: center;
+	font-size: 400%;
+}
+
+#game {
+	height: 820px;
+}
+
+#chat {
+	height: 500px;
+}
+
+#users {
+	height: 420px;
+}
+
+#room-title {
+	width: 50%;
+	float: left;
+}
+#room-code {
+	position:absolute;
+	top:10%;
+	font-size:50%;
+	cursor:pointer;
+	border-style:outset;
+	border-color:black;
+}
+
+#round-number {
+	width: 50%;
+	float: left;
+}
+
+#chat-box {
+	width: 600px;
+	height: 400px;
+	max-height: 400px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+#chat-box::-webkit-scrollbar { 
+	display: none;
+}
+
+#msgcontainer {
+	height: 400px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+#chatInput {
+	margin-top: 5px;
+	width: 600px;
+	height: 30px;
+	outline: none;
+	font-family: Comic Sans MS;
+	background-color:#AABADA;
+	color:white;
+}
+
+.greenchat {
+	color: rgb(0, 255, 0);
+}
+
+.redchat {
+	color: rgb(255, 0, 0);
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>party.io</title>
+		
+		<link rel="stylesheet" href="/style.css" />
+		<link rel = "shortcut icon" href = "https://cdn1.iconfinder.com/data/icons/games-colored/512/pokeball-512.png" />
+		
+		<script src="/script.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			initiate();
+		</script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="box" id="create">Create</div>
+			<div class="box" id="join">Join</div>
+		</div>
+
+		<div class="box" id="createFormWrapper">
+			<form autocomplete="off"> 
+				<label>Room name:</label><br />
+				<input type = "text" id ="createRoomName" class = "formInput"  /><br />
+				<label>Enter as:</label><br />
+				<input type = "text" id ="createPlayerName" class = "formInput"  /><br />
+				<label>Password(optional):</label><br />
+				<input type = "text" id = "createRoomPassword" class = "formInput"  /><br/><br/>
+				<input type = "submit" value ="Create" id = "submitCreate"  class = "formInput" > 
+			</form>
+		</div>
+		
+		<div class="box" id="joinFormWrapper">
+			<form autocomplete="off"> 
+				<label>Join as:</label><br />
+				<input type = "text" id ="joinPlayerName" class = "formInput" /><br />
+				<label>Invite Code:</label><br />
+				<input type = "text" id ="joinInviteCode" class = "formInput"  /><br />
+				<label>Password(optional):</label><br />
+				<input type = "text" id = "joinRoomPassword" class = "formInput"  /><br/><br/>
+				<input type = "submit" value ="Join" id = "submitJoin"  class = "formInput" >
+			</form>
+		</div>
+		
+		<div class="box" id="backButton"> ←</div>
+		
+		<div id = "container">
+			<div id = "left-container">
+				<div id = "header" >
+					<div id = "room-title"></div>
+					<div id = "room-code"></div>
+					<div id = "round-number"></div>
+				</div>
+
+				<div id = "game">
+					
+				</div>
+			</div>
+			
+			<div id = "right-container">
+				<div id = "chat">
+					<div id = "chat-box" >
+						<div id = "msgcontainer"></div>
+					</div>
+
+					<form onsubmit = "sendMessage()">
+						<input type = "text" id = "chatInput" name = "msg" autocomplete = "off" />
+						<input type = "submit" hidden />
+					</form>
+				</div>
+
+				<div id = "users">
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

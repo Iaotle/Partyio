@@ -1,0 +1,27 @@
+{
+	"name": "partyio",
+	"version": "1.0.0",
+	"description": "HCI Party.io Web",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Iaotle/Partyio.git"
+	},
+	"keywords": [
+		"partygame",
+		"nodejs"
+	],
+	"author": "Vadim, Anhphi, Pieter",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Iaotle/Partyio/issues"
+	},
+	"homepage": "https://github.com/Iaotle/Partyio#readme",
+	"dependencies": {
+		"ws": "^7.3.0"
+	}
+}
